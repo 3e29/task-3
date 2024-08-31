@@ -1,0 +1,188 @@
+#properties-page .description {
+  width: 100%;
+  margin-top: 5%;
+}
+#properties-page .container {
+  margin-bottom: 50px;
+}
+#properties-page .description .image-card {
+  width: 100%;
+  display: grid;
+  gap: 5%;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: start;
+  justify-items: start;
+}
+#properties-page .description .image-card .image-holder {
+  grid-column: span 8;
+}
+#properties-page .description .image-card .img1 {
+  width: 100%;
+}
+#properties-page .description .content p {
+  padding-top: 25px;
+}
+#properties-page .description .content {
+  margin-bottom: 50px;
+}
+
+#properties-page .description .image-card .offers {
+  grid-column: span 4;
+  background-color: #fff;
+  width: 100%;
+  margin: 0;
+  padding: 15px 30px;
+  box-shadow: 1px 1px 15px 0 #eee;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+#properties-page .description .image-card .offers li {
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+@media (min-width: 992px) {
+  #properties-page .description .image-card .offers {
+    width: fit-content;
+  }
+}
+
+#properties-page .description .image-card .offers li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+#properties-page .description .image-card .offers li .note {
+  text-wrap: nowrap;
+}
+
+#properties-page .description .image-card .offers li .note p {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+#properties-page .description .image-card .offers li .note span {
+  color: var(--secondColor);
+  font-size: 14px;
+}
+
+#properties-page .description .image-card .offers li .float {
+  position: absolute;
+  bottom: 5px;
+  left: 2px;
+  font-size: 14px;
+  color: var(--secondColor);
+}
+#properties-page .description .image-card .desc {
+  border-radius: 5px;
+  width: fit-content;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: var(--mainTransparent);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+#properties-page .description .image-card .image-holder h2 {
+  grid-row: span 1;
+  padding: 10px 10px 25px 0;
+}
+
+@media (max-width: 576px) {
+  #properties-page .secondary-hero .img-holder .title h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 992px) {
+  #properties-page .description .image-card .image-holder,
+  #properties-page .description .image-card .offers {
+    grid-column: span 12;
+    width: 100%;
+  }
+}
+
+#properties-page .container .card {
+  grid-column: span 8;
+  background-color: var(--smoke);
+  width: 100%;
+  margin: 15px 0;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+#properties-page .container .card > * {
+  padding: 8px 15px;
+}
+
+#properties-page .container .card .card-title {
+  border-bottom: 1px solid var(--secondColor);
+  font-size: 18px;
+  color: var(--mainColor);
+}
+
+#properties-page .container .card p[data-id] {
+  max-height: 0;
+  margin-bottom: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+#properties-page .container .card p[data-id].active {
+  max-height: 100px;
+}
+
+#properties-page .container .card .card-body {
+  padding-bottom: 15px;
+}
+
+#properties-page .container .card .card-body .border {
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--secondColor);
+}
+
+#properties-page .container .card .card-body p {
+  margin-bottom: 20px;
+}
+
+#properties-page .container .card .card-body p .bold {
+  font-weight: 600;
+}
+
+#properties-page .container .card .card-body p a {
+  color: blue;
+}
+
+#properties-page .container .card h4 {
+  padding-bottom: 0;
+  font-weight: 600;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  cursor: pointer;
+}
+
+#properties-page .container .card h4.active {
+  font-size: 18px;
+  color: var(--mainColor) !important;
+}
+
+#properties-page .container .card h4[data-para] {
+  color: #2f2f2f;
+}

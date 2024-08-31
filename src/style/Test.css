@@ -1,0 +1,18 @@
+.secondary-hero .img-holder{
+  background-image: url("../assets/page-heading-bg.jpg");
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.secondary-hero .img-holder .title p {
+  background-color: #fff;
+  padding: 10px;
+  width: fit-content;
+  margin: auto auto 20px;
+}
+.secondary-hero .img-holder .title h1 {
+  color: #fff;
+  font-size: 4rem;
+}
